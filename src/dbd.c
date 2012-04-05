@@ -4,6 +4,8 @@
 
 #include "php.h"
 #include "dbd.h"
+#include <apr_dbd.h>
+#include <mod_dbd.h>
 
 static zend_function_entry dbd_functions[] = {
     PHP_FE(dbd_prepare, NULL)
