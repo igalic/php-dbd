@@ -45,7 +45,7 @@ php_dbd_init_globals(zend_dbd_globals *dbd_globals)
   dbd_globals->pool = NULL;
 }
 
-PHP_RINIT_FUNCION(dbd TSRMLS_CC)
+PHP_RINIT_FUNCTION(dbd TSRMLS_CC)
 {
   DBD_G(r) = SG(server_context);
   return SUCCESS;
