@@ -8,7 +8,7 @@
 #include <mod_dbd.h>
 
 static zend_function_entry dbd_functions[] = {
-    PHP_FE(dbd_prepare, NULL)
+    ZEND_NS_FE(DBD_NS, prepare, NULL)
     {NULL, NULL, NULL}
 };
 
@@ -33,7 +33,7 @@ zend_module_entry dbd_module_entry = {
 ZEND_GET_MODULE(dbd)
 #endif
 
-PHP_FUNCTION(dbd_prepare)
+PHP_FUNCTION(prepare)
 {
     RETURN_STRING("prepared", 1);
 }
