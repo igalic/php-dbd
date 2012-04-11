@@ -1,6 +1,6 @@
-#ifdef HAVE_CONFIG_H
+#ifndef HAVE_CONFIG_H
 #include "config.h"
-#endif
+#endif /* HAVE_CONFIG_H */
 
 #include "php.h"
 #include "TSRM.h"
