@@ -9,9 +9,9 @@
 #define PHP_DBD_EXTNAME "DBD"
 #define DBD_NS "dbd"
 
-# include <httpd.h>
-# include <apr_dbd.h>
-# include <mod_dbd.h>
+#include <httpd.h>
+#include <apr_dbd.h>
+#include <mod_dbd.h>
 
 ZEND_BEGIN_MODULE_GLOBALS(dbd)
   request_rec *r;
@@ -33,4 +33,4 @@ PHP_FUNCTION(prepare);
 extern zend_module_entry dbd_module_entry;
 #define phpext_dbd_ptr &dbd_module_entry
 
-#endif
+#endif /* PHP_DBD_H */
