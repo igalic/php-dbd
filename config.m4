@@ -6,6 +6,8 @@ if test "$PHP_DBD" = "yes"; then
   PHP_NEW_EXTENSION(dbd, src/dbd.c, $ext_shared)
 fi
 
+CFLAGS="$CFLAGS -DZTS"
+
 
 PHP_ARG_WITH(apxs2,,
 [  --with-apxs2[=FILE]    pathname to the Apache apxs tool [apxs]], no, no)

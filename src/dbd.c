@@ -3,6 +3,8 @@
 #endif
 
 #include "php.h"
+#include "TSRM.h"
+#include "SAPI.h"
 #include "dbd.h"
 #include <apr_dbd.h>
 #include <mod_dbd.h>
@@ -43,9 +45,9 @@ php_dbd_init_globals(zend_dbd_globals *dbd_globals)
   dbd_globals->pool = NULL;
 }
 
-PHP_RINIT_FUNCION(dbd)
+PHP_RINIT_FUNCION(dbd TSRMLS_CC)
 {
-  DBD_G(r) = SG(request_rec);
+  DBD_G(r) = SG(server_context);
   return SUCCESS;
 }
 
