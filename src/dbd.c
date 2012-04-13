@@ -5,7 +5,7 @@
 #include "php.h"
 #include "TSRM.h"
 #include "SAPI.h"
-#include "dbd.h"
+#include "php_dbd.h"
 #include <apr_dbd.h>
 #include <mod_dbd.h>
 
