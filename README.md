@@ -1,6 +1,5 @@
-The goal of this project is to create a PHP extension which provides
-a clear, Object Oriented, PHP 5.4 compatible API, using Apache httpd's mod_dbd
-as backend.
+The goal of this project is to create a PHP PDO module which provides
+an interface to use Apache httpd's mod_dbd as backend.
 
 mod_dbd offers a database interface which equipped with all bells
 and whistles one would expect from a full-fletched Application server:
